@@ -9,9 +9,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by ASUS on 16/11/2018.
- */
+
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
 
