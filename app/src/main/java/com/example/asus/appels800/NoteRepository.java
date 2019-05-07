@@ -1,8 +1,12 @@
-package com.example.asus.architecturecomponentexample;
+package com.example.asus.appels800;
 
 import android.app.Application;
 import android.arch.lifecycle.LiveData;
 import android.os.AsyncTask;
+
+import com.example.asus.appels800.model.Note;
+import com.example.asus.appels800.model.NoteDao;
+import com.example.asus.appels800.model.NoteDatabase;
 
 import java.util.List;
 

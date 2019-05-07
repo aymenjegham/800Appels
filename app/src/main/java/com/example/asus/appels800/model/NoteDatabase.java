@@ -1,4 +1,4 @@
-package com.example.asus.architecturecomponentexample;
+package com.example.asus.appels800.model;
 
 import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
@@ -52,7 +52,7 @@ public abstract class NoteDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            noteDao.inseret(new Note("Title 1","Description 1",1));
+            noteDao.inseret(new Note("Title 4","Descrn 1",1));
             noteDao.inseret(new Note("Title 2","Description 2",2));
             noteDao.inseret(new Note("Title 3","Description 3",3));
 

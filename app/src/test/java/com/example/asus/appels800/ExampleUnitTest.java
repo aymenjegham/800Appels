@@ -1,4 +1,4 @@
-package com.example.asus.architecturecomponentexample;
+package com.example.asus.appels800;
 
 import org.junit.Test;
 

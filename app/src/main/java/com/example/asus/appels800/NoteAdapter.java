@@ -1,10 +1,12 @@
-package com.example.asus.architecturecomponentexample;
+package com.example.asus.appels800;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.asus.appels800.model.Note;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +32,6 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
         Note currentNote = notes.get(position);
         holder.textViewTitle.setText(currentNote.getTitle());
         holder.textViewDescription.setText(currentNote.getDescription());
-        holder.textViewPriority.setText(String.valueOf(currentNote.getPriority()));
 
 
     }
@@ -56,13 +57,11 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
 
         private TextView textViewTitle;
         private TextView textViewDescription;
-        private TextView textViewPriority;
 
         public NoteHolder(View itemView) {
             super(itemView);
             textViewTitle = itemView.findViewById(R.id.text_view_title);
             textViewDescription = itemView.findViewById(R.id.text_view_description);
-            textViewPriority = itemView.findViewById(R.id.text_view_priority);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

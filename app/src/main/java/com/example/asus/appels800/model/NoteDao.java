@@ -1,4 +1,4 @@
-package com.example.asus.architecturecomponentexample;
+package com.example.asus.appels800.model;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
@@ -33,6 +33,6 @@ public interface NoteDao {
 
 
 
-    @Query("SELECT * FROM note_table ORDER BY priority DESC")
+    @Query("SELECT * FROM note_table ORDER BY priority ASC")
     LiveData<List<Note>> getAllNotes();
 }

@@ -1,9 +1,12 @@
-package com.example.asus.architecturecomponentexample;
+package com.example.asus.appels800.viewmodel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
+
+import com.example.asus.appels800.NoteRepository;
+import com.example.asus.appels800.model.Note;
 
 import java.util.List;
 

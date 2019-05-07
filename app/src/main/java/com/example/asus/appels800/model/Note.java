@@ -1,4 +1,4 @@
-package com.example.asus.architecturecomponentexample;
+package com.example.asus.appels800.model;
 
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
