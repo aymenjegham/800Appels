@@ -78,7 +78,10 @@
     <string name="class_rooms">class rooms</string>
     <string name="banking">banking</string>
     <string name="uregences">uregences</string>
-    <string name="police_garde_nationale_protection_civile">police-garde nationale-protection civile</string>
+    <string name="police_garde_nationale">police-garde nationale-protection civile</string>
     <string name="consulter_la_liste_des_contactes_d_assurances_d_hammam_sousse">consulter la liste des contactes d\'assurances d\'hammam sousse</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="phone">phone</string>
 
 </resources>

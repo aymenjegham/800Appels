@@ -377,14 +377,17 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/ic_police"
-                            android:contentDescription="@string/police_garde_nationale_protection_civile"
+                            android:contentDescription="@string/police_garde_nationale"
                             android:padding="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
                             android:layout_marginTop="5dp"
-                            android:text="@string/police_garde_nationale_protection_civile"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/police_garde_nationale"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -406,7 +409,7 @@
                             android:padding="3dp"
                             android:scrollHorizontally="true"
                             android:singleLine="true"
-                            android:text="@string/police_garde_nationale_protection_civile"
+                            android:text="@string/police_garde_nationale"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -640,8 +643,9 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="35sp"
                             android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
                             android:text="@string/v_t_rinaire"
                             android:textStyle="bold" />
 
@@ -769,7 +773,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
                             android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
                             android:text="@string/enseign_region"
                             android:textAlignment="center"
                             android:textStyle="bold" />
@@ -829,8 +835,9 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="50sp"
                             android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
                             android:text="@string/cultur_jeuness"
                             android:textStyle="bold" />
 
@@ -956,8 +963,9 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="35sp"
                             android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
                             android:text="@string/justice"
                             android:textStyle="bold" />
 
@@ -1149,8 +1157,9 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="35sp"
                             android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
                             android:text="@string/notaire"
                             android:textAlignment="center"
                             android:textStyle="bold" />
@@ -1658,8 +1667,10 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="35sp"
+                            android:layout_marginStart="5dp"
                             android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
                             android:text="@string/administration_r_gionale"
                             android:textAlignment="center"
                             android:textStyle="bold" />

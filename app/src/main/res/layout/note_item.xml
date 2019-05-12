@@ -15,10 +15,15 @@
 
         <ImageView
             android:id="@+id/text_view_priority"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="39dp"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@+id/text_view_description"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
+             android:layout_marginEnd="1dp"
+            android:layout_marginBottom="12dp"
             android:background="@drawable/ic_call"
+            android:contentDescription="@string/phone"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
 
@@ -26,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/text_view_title"
-            android:text="Title"
+            android:text="@string/title"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:maxLines="1"
             android:layout_toStartOf="@id/text_view_priority"
@@ -38,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text_view_title"
-            android:text="Description"/>
+            android:text="@string/description"/>
 
 
     </RelativeLayout>
