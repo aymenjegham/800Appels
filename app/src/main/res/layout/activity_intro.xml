@@ -3,11 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     tools:context=".IntroActivity">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/horiztonal_scrollview_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:fadingEdge="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline">
+
+            <LinearLayout
+                android:id="@+id/horiztonal_outer_layout_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"></LinearLayout>
+        </HorizontalScrollView>
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -50,11 +76,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:gravity="center"
             android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@+id/eventTv"
-            tools:layout_editor_absoluteX="56dp">
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
             <TextView
                 style="@style/TextAppearance.MainTitle"
@@ -64,7 +95,7 @@
                 android:text="@string/app_name"
                 android:textAlignment="center"
                 android:textColor="#CDAF0A"
-                android:textSize="40sp"
+                android:textSize="36sp"
                 android:textStyle="bold"
                 android:typeface="serif" />
 
@@ -72,11 +103,11 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="12dp"
                 android:text="50 GROUPES - 458 TITRES - 815 NUMEROS"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
 
             <RelativeLayout
@@ -84,7 +115,7 @@
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="32dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/bluebutton"
                 android:elevation="4dp">
 
@@ -114,8 +145,8 @@
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="32dp"
-                android:background="#F0E7E7"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/whitebutton"
                 android:elevation="4dp">
 
                 <ImageView
@@ -144,8 +175,8 @@
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="32dp"
-                android:background="#DF9292"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/pinkbutton"
                 android:elevation="4dp">
 
                 <ImageView
@@ -174,7 +205,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="8dp"
-                android:background="#69B3ED"
+                android:background="@drawable/darkbutton"
                 android:elevation="4dp">
 
                 <ImageView
@@ -198,36 +229,12 @@
             </RelativeLayout>
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/eventTv"
-            android:layout_width="0dp"
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="TextView"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:text="EN PARTENARIAT AVEC :"
-            android:textAlignment="center"
-            android:textColor="@color/design_default_color_primary_dark"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonsContainer" />
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
 
     </android.support.constraint.ConstraintLayout>
 

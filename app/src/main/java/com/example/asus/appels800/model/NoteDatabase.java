@@ -11,7 +11,7 @@ import android.support.annotation.NonNull;
 /**
  * Created by ASUS on 15/11/2018.
  */
-@Database(entities = {Note.class},version = 1)
+@Database(entities = {Note.class},version = 2)
 public abstract class NoteDatabase extends RoomDatabase {
 
 
@@ -21,7 +21,7 @@ public abstract class NoteDatabase extends RoomDatabase {
 
     public static  synchronized  NoteDatabase getInstance(Context context){
         if (instance == null){
-            instance = Room.databaseBuilder(context.getApplicationContext(),NoteDatabase.class,"note_database")
+            instance = Room.databaseBuilder(context.getApplicationContext(),NoteDatabase.class,"annuaire_database")
                     .fallbackToDestructiveMigration()
                     .addCallback(roomCallback)
                     .build();
@@ -52,9 +52,9 @@ public abstract class NoteDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            noteDao.inseret(new Note("Title 4","Descrn 1",1));
-            noteDao.inseret(new Note("Title 2","Description 2",2));
-            noteDao.inseret(new Note("Title 3","Description 3",3));
+            noteDao.inseret(new Note("Title 4","Descrn 1",1,45455,45478,4555));
+            noteDao.inseret(new Note("Title 2","Description 2",2,45845454,5485,4558));
+            noteDao.inseret(new Note("Title 3","Description 3",3,458454,584555,985));
 
             return null;
         }

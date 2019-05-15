@@ -28,11 +28,11 @@ public interface NoteDao {
     void delete(Note note);
 
 
-    @Query("DELETE FROM note_table")
+    @Query("DELETE FROM annuaire_table")
     void deleteAllNotes();
 
 
 
-    @Query("SELECT * FROM note_table ORDER BY priority ASC")
+    @Query("SELECT * FROM annuaire_table ORDER BY priority ASC")
     LiveData<List<Note>> getAllNotes();
 }
