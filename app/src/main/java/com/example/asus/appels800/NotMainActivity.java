@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 
 import com.example.asus.appels800.model.Note;
@@ -40,13 +41,21 @@ public class NotMainActivity extends AppCompatActivity {
 
         noteViewModel= ViewModelProviders.of(this).get(NoteViewModel.class);
         noteViewModel.getAllNotes().observe(this, new Observer<List<Note>>() {
+
             @Override
             public void onChanged(@Nullable List<Note> notes) {
+
                 //update our RecyclerView
                 //Toast.makeText(NotMainActivity.this, "onChanged", Toast.LENGTH_SHORT).show();
                 adapter.setNotes(notes);
             }
+
+
         });
+
+        Log.v("checkingreturn",noteViewModel.getAllNotes().getValue()+"  ");
+
+
 
     }
 

@@ -12,21 +12,22 @@ import android.arch.persistence.room.PrimaryKey;
 public class Note {
     @PrimaryKey(autoGenerate = true)
     private int id;
-
     private String title;
     private String description;
     private int priority;
-    private int numone;
-    private int numtwo;
-    private int numthree;
+    private String numone;
+    private String numtwo;
+    private String numthree;
+    private String numfour;
 
-    public Note(String title, String description, int priority,int numone,int numtwo,int numthree) {
+    public Note(String title, String description, int priority,String numone,String numtwo,String numthree,String numfour) {
         this.title = title;
         this.description = description;
         this.priority = priority;
         this.numone=numone;
         this.numtwo=numtwo;
         this.numthree=numthree;
+        this.numfour=numfour;
     }
 
     public void setId(int id) {
@@ -49,27 +50,35 @@ public class Note {
         return priority;
     }
 
-    public int getNumone() {
+    public String getNumone() {
         return numone;
     }
 
-    public void setNumone(int numone) {
+    public void setNumone(String numone) {
         this.numone = numone;
     }
 
-    public int getNumtwo() {
+    public String getNumtwo() {
         return numtwo;
     }
 
-    public void setNumtwo(int numtwo) {
+    public void setNumtwo(String numtwo) {
         this.numtwo = numtwo;
     }
 
-    public int getNumthree() {
+    public String getNumthree() {
         return numthree;
     }
 
-    public void setNumthree(int numthree) {
+    public void setNumthree(String numthree) {
         this.numthree = numthree;
+    }
+
+    public String getNumfour() {
+        return numfour;
+    }
+
+    public void setNumfour(String numfour) {
+        this.numfour = numfour;
     }
 }

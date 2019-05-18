@@ -33,6 +33,7 @@ public interface NoteDao {
 
 
 
-    @Query("SELECT * FROM annuaire_table ORDER BY priority ASC")
+    @Query("SELECT * FROM annuaire_table")
     LiveData<List<Note>> getAllNotes();
+
 }

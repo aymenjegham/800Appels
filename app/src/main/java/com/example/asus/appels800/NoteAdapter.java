@@ -1,6 +1,7 @@
 package com.example.asus.appels800;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,7 +31,14 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
 
         Note currentNote = notes.get(position);
         holder.textViewTitle.setText(currentNote.getTitle());
-        holder.textViewDescription.setText(currentNote.getDescription());
+        holder.numone.setText(currentNote.getNumone());
+
+        if((!currentNote.equals(null))){
+            holder.numtwo.setText(String.valueOf(currentNote.getNumtwo()));
+        }
+        if((!currentNote.equals(null))){
+            holder.numthree.setText(String.valueOf(currentNote.getNumthree()));
+        }
 
 
     }
@@ -55,12 +63,16 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
     class NoteHolder extends RecyclerView.ViewHolder {
 
         private TextView textViewTitle;
-        private TextView textViewDescription;
+         private TextView numone;
+        private TextView numtwo;
+        private TextView numthree;
 
         public NoteHolder(View itemView) {
             super(itemView);
             textViewTitle = itemView.findViewById(R.id.text_view_title);
-            textViewDescription = itemView.findViewById(R.id.text_view_description);
+            numone = itemView.findViewById(R.id.numone);
+             numtwo=itemView.findViewById(R.id.numtwo);
+            numthree=itemView.findViewById(R.id.numthree);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

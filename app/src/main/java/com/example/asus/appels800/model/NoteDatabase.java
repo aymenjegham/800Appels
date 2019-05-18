@@ -11,7 +11,7 @@ import android.support.annotation.NonNull;
 /**
  * Created by ASUS on 15/11/2018.
  */
-@Database(entities = {Note.class},version = 2)
+@Database(entities = {Note.class},version = 6)
 public abstract class NoteDatabase extends RoomDatabase {
 
 
@@ -35,7 +35,7 @@ public abstract class NoteDatabase extends RoomDatabase {
         @Override
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
-            new PopulateDbAsyncTask(instance).execute();
+           // new PopulateDbAsyncTask(instance).execute();
         }
     };
 
@@ -52,9 +52,9 @@ public abstract class NoteDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            noteDao.inseret(new Note("Title 4","Descrn 1",1,45455,45478,4555));
-            noteDao.inseret(new Note("Title 2","Description 2",2,45845454,5485,4558));
-            noteDao.inseret(new Note("Title 3","Description 3",3,458454,584555,985));
+        /*   noteDao.inseret(new Note("Title 4","Descrn 1",1,"ffg","ffg","ffg","ffg"));
+            noteDao.inseret(new Note("Title 2","Description 2",2,"ffg","ffg","ffg","ffg"));
+            noteDao.inseret(new Note("Title 3","Description 3",3,"ffg","ffg","ffg","ffg"));*/
 
             return null;
         }
