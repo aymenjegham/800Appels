@@ -16,6 +16,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -40,5 +45,12 @@ dependencies {
     annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
 
     debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
+
+
+
+
+
 
 }

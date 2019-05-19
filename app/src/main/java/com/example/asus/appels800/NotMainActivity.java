@@ -1,8 +1,6 @@
 package com.example.asus.appels800;
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
-import android.support.annotation.Nullable;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,15 +8,15 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 
+import com.example.asus.appels800.model.DatabaseAccess;
 import com.example.asus.appels800.model.Note;
-import com.example.asus.appels800.viewmodel.NoteViewModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class NotMainActivity extends AppCompatActivity {
 
 
-    private NoteViewModel noteViewModel;
 
 
 
@@ -27,8 +25,13 @@ public class NotMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
+        databaseAccess.open();
+        ArrayList<Note> list = new ArrayList<Note>();
 
-
+        list = (ArrayList<Note>) databaseAccess.getlist();
+        Log.v("gettingresult",list.size()+" "+list.get(0).getDescription());
+        databaseAccess.close();
 
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
@@ -37,32 +40,8 @@ public class NotMainActivity extends AppCompatActivity {
 
         final NoteAdapter adapter = new NoteAdapter();
         recyclerView.setAdapter(adapter);
-
-
-        noteViewModel= ViewModelProviders.of(this).get(NoteViewModel.class);
-        noteViewModel.getAllNotes().observe(this, new Observer<List<Note>>() {
-
-            @Override
-            public void onChanged(@Nullable List<Note> notes) {
-
-                //update our RecyclerView
-                //Toast.makeText(NotMainActivity.this, "onChanged", Toast.LENGTH_SHORT).show();
-                adapter.setNotes(notes);
-            }
-
-
-        });
-
-        Log.v("checkingreturn",noteViewModel.getAllNotes().getValue()+"  ");
-
+        adapter.setNotes(list);
 
 
     }
-
-
-
-
-
-
-
 }
