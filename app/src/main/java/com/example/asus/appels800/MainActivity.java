@@ -150,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Municiplalité");
                 startActivity(intent);
             }
         });
@@ -159,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Délégation");
                 startActivity(intent);
             }
         });
@@ -176,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Administration Locale");
                 startActivity(intent);
             }
         });
@@ -185,6 +188,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Police – GARDE Nationale – Protection CIVILE");
                 startActivity(intent);
             }
         });
@@ -194,6 +198,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Etablissement des Soins Locaux  ");
                 startActivity(intent);
             }
         });
@@ -203,6 +208,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","PHARMACIE");
+
                 startActivity(intent);
             }
         });
@@ -212,6 +219,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","OPTICIEN");
                 startActivity(intent);
             }
         });
@@ -221,6 +229,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Vétérinaire");
                 startActivity(intent);
             }
         });
@@ -230,6 +239,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","ENSEIGNEMENT & APPRENTISSAGE (LOCAL)");
+
                 startActivity(intent);
             }
         });
@@ -238,6 +249,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Enfance & Enseignement (Régional)");
                 startActivity(intent);
             }
         });
@@ -247,6 +259,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Culture & Jeunesse ( local)");
                 startActivity(intent);
             }
         });
@@ -256,6 +269,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Etablissement Culturel  Régional");
                 startActivity(intent);
             }
         });
@@ -265,6 +279,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Justice & Affaires Foncières");
                 startActivity(intent);
             }
         });
@@ -273,6 +288,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","AVOCATS");
                 startActivity(intent);
             }
         });
@@ -282,6 +298,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Huissiers");
                 startActivity(intent);
             }
         });
@@ -291,6 +308,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Notaires");
+
                 startActivity(intent);
             }
         });
@@ -300,6 +319,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Comptabilité");
                 startActivity(intent);
             }
         });
@@ -308,6 +328,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","");
                 startActivity(intent);
             }
         });
@@ -317,6 +338,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","La Poste");
                 startActivity(intent);
             }
         });
@@ -326,6 +348,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Assurances");
                 startActivity(intent);
             }
         });
@@ -335,6 +358,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","BANK");
                 startActivity(intent);
             }
         });
@@ -343,6 +367,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Sports & Associations");
                 startActivity(intent);
             }
         });
@@ -352,6 +377,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Agence de Voyage");
                 startActivity(intent);
             }
         });
@@ -361,6 +387,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Administrations Régionales");
                 startActivity(intent);
             }
         });
@@ -370,6 +397,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Transport");
+
                 startActivity(intent);
             }
         });
@@ -378,6 +407,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Station Radio FM");
+
                 startActivity(intent);
             }
         });
@@ -387,6 +418,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Hotels");
+
                 startActivity(intent);
             }
         });
@@ -396,6 +429,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Attraction & Loisirs");
+
                 startActivity(intent);
             }
         });
@@ -405,6 +440,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Station Radio FM");
+
                 startActivity(intent);
             }
         });

@@ -1,5 +1,6 @@
 package com.example.asus.appels800;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,12 +25,23 @@ public class NotMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        String param;
+        if (savedInstanceState == null) {
+            Bundle extras = getIntent().getExtras();
+            if(extras == null) {
+                param= null;
+            } else {
+                param= extras.getString("param");
+            }
+        } else {
+            param= (String) savedInstanceState.getSerializable("param");
+        }
 
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
         ArrayList<Note> list = new ArrayList<Note>();
 
-        list = (ArrayList<Note>) databaseAccess.getlist();
+        list = (ArrayList<Note>) databaseAccess.getlist(param);
         Log.v("gettingresult",list.size()+" "+list.get(0).getDescription());
         databaseAccess.close();
 

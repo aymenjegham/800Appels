@@ -8,9 +8,7 @@ import android.arch.persistence.room.PrimaryKey;
  */
 
 
-@Entity(tableName = "annuaire_table")
-public class Note {
-    @PrimaryKey(autoGenerate = true)
+ public class Note {
     private int id;
     private String title;
     private String description;
@@ -19,8 +17,9 @@ public class Note {
     private String numtwo;
     private String numthree;
     private String numfour;
+    private String type;
 
-    public Note(String title, String description, int priority,String numone,String numtwo,String numthree,String numfour) {
+    public Note(String title, String description, int priority,String numone,String numtwo,String numthree,String numfour,String type) {
         this.title = title;
         this.description = description;
         this.priority = priority;
@@ -28,6 +27,7 @@ public class Note {
         this.numtwo=numtwo;
         this.numthree=numthree;
         this.numfour=numfour;
+        this.type=type;
     }
 
     public void setId(int id) {
@@ -80,5 +80,13 @@ public class Note {
 
     public void setNumfour(String numfour) {
         this.numfour = numfour;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
