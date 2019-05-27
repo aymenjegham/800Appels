@@ -17,7 +17,7 @@
     <string name="consulter_la_liste_des_contactes_de_la_justice">Consulter la liste des contactes de la justice</string>
     <string name="comptabilit_fiscalit_consulting"><![CDATA[Comptabilité,Fiscalité & Consulting]]></string>
     <string name="bank">Bank</string>
-     <string name="justice">justice</string>
+    <string name="justice">justice</string>
     <string name="transport">transport</string>
     <string name="voyages">voyages</string>
     <string name="sports">sports</string>
@@ -58,10 +58,10 @@
     <string name="cultures">cultures</string>
     <string name="consulteropticiens_d_hammam_sousse">Consulter la liste des contactes des opticiens d\'hammam sousse</string>
     <string name="consulter_la_liste_des_contactes_des_parks">Consulter la liste des contactes des parks</string>
-     <string name="consulter_la_liste_des_contactes_des_hussiers">Consulter la liste des contactes des hussiers</string>
+    <string name="consulter_la_liste_des_contactes_des_hussiers">Consulter la liste des contactes des hussiers</string>
     <string name="consulter_la_liste_des_contactes_des_comptables">Consulter la liste des contactes des Comptables</string>
     <string name="consulter_la_liste_des_contactes_des_avocats">Consulter la liste des contactes des avocats</string>
-     <string name="consulter_la_liste_des_contactes_des_architectes">Consulter la liste des contactes des architectes</string>
+    <string name="consulter_la_liste_des_contactes_des_architectes">Consulter la liste des contactes des architectes</string>
     <string name="liste_des_contactes_de_administrations_r_gionale">Liste des contactes de administrations régionale</string>
     <string name="municipalit_hammam_sousse">Municipalité Hammam Sousse</string>
     <string name="consulteragences_de_voyage">Consulter la liste des contactes des agences de voyage</string>

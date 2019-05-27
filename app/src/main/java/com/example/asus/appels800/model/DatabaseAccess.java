@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +51,17 @@ public class DatabaseAccess {
     public List<Note> getlist(String param) {
         List<Note> studentArrayList = new ArrayList<Note>();
          Cursor cursor = db.rawQuery("SELECT * FROM annuaire_table where  description= ?", new String [] {param});
+        while(cursor.moveToNext()) {
+            studentArrayList.add(new Note(cursor.getString(cursor.getColumnIndex("title")), cursor.getString(cursor.getColumnIndex("description")), cursor.getInt(cursor.getColumnIndex("priority")), cursor.getString(cursor.getColumnIndex("numone")), cursor.getString(cursor.getColumnIndex("numtwo")),cursor.getString(cursor.getColumnIndex("numthree")),cursor.getString(cursor.getColumnIndex("numfour")),cursor.getString(cursor.getColumnIndex("type"))));
+        }
+
+        return studentArrayList ;
+    }
+
+    public List<Note> getsoinlist(String param1,String param2) {
+        List<Note> studentArrayList = new ArrayList<Note>();
+        Cursor cursor = db.rawQuery("SELECT * FROM annuaire_table where  description IN ( ? ,?)", new String [] {param1,param2});
+
         while(cursor.moveToNext()) {
             studentArrayList.add(new Note(cursor.getString(cursor.getColumnIndex("title")), cursor.getString(cursor.getColumnIndex("description")), cursor.getInt(cursor.getColumnIndex("priority")), cursor.getString(cursor.getColumnIndex("numone")), cursor.getString(cursor.getColumnIndex("numtwo")),cursor.getString(cursor.getColumnIndex("numthree")),cursor.getString(cursor.getColumnIndex("numfour")),cursor.getString(cursor.getColumnIndex("type"))));
         }

@@ -9,11 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MedecineActivity" />
         <activity
             android:name=".NotMainActivity"
-            android:launchMode="singleTop">
-
-        </activity>
+            android:launchMode="singleTop" />
         <activity
             android:name=".AddEditNoteActivity"
             android:parentActivityName=".NotMainActivity" />
@@ -23,12 +22,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".IntroActivity"
-            android:theme="@style/AppCompat.NoActionBar">
-
-        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/AppCompat.NoActionBar" />
     </application>
 
 </manifest>

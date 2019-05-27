@@ -25,25 +25,35 @@ public class NotMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String param;
+        String param,param2;
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
             if(extras == null) {
                 param= null;
+                param2=null;
             } else {
-                param= extras.getString("param");
+                param= extras.getString("param",null);
+                param2=extras.getString("param2","null");
             }
         } else {
             param= (String) savedInstanceState.getSerializable("param");
+            param2= (String) savedInstanceState.getSerializable("param2");
         }
 
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
         ArrayList<Note> list = new ArrayList<Note>();
+        ArrayList<Note> list2 = new ArrayList<Note>();
 
-        list = (ArrayList<Note>) databaseAccess.getlist(param);
-        Log.v("gettingresult",list.size()+" "+list.get(0).getDescription());
-        databaseAccess.close();
+
+        if(param2.equals(null)){
+            list = (ArrayList<Note>) databaseAccess.getlist(param);
+
+        }else{
+            list=(ArrayList<Note>) databaseAccess.getsoinlist(param,param2);
+
+        }
+         databaseAccess.close();
 
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);

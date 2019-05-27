@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
         cardView_medecine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                Intent intent =new Intent(MainActivity.this,MedecineActivity.class);
                 startActivity(intent);
             }
         });
@@ -198,7 +198,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
-                intent.putExtra("param","Etablissement des Soins Locaux  ");
+                intent.putExtra("param","Etablissement des Soins Nationaux");
+                intent.putExtra("param2","Etablissement des Soins Locaux  ");
+
                 startActivity(intent);
             }
         });
@@ -328,7 +330,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
-                intent.putExtra("param","");
+                intent.putExtra("param","Architecture");
                 startActivity(intent);
             }
         });
