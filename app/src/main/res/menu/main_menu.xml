@@ -4,9 +4,13 @@
 
 
 
-    <item android:title="Delete all notes"
-        app:showAsAction="never"
-        android:id="@+id/delete_all_notes">
+    <item
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:title="Search"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/ic_search"
+        android:id="@+id/search"
+        app:actionViewClass="android.support.v7.widget.SearchView">
 
 
 

@@ -10,6 +10,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/realisepar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="3dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/projet_r_alis_a_but_non_lucratif_ni_publicitaires_projet_r_alis_par_jci_hammam_sousse_en_collaboration_avec_utica_h_sousse_utss_h_sousse_et_le_comit_local_du_croissant_rouge_tunisien_pour_soutenir_les_8_coles_primaires_de_la_commune_4550_l_ves_et_pour_rapprocher_les_services_des_citoyens"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
         <HorizontalScrollView
             android:id="@+id/horiztonal_scrollview_id"
             android:layout_width="match_parent"
@@ -53,6 +74,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/jcilogo1stscreen"
                 app:srcCompat="@drawable/jci" />
 
             <ImageView
@@ -60,6 +82,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/piccroissant_rouge"
                 app:srcCompat="@drawable/crouge" />
 
             <ImageView
@@ -67,13 +90,14 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/picutica"
                 app:srcCompat="@drawable/utica" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/buttonsContainer"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="8dp"
@@ -82,7 +106,7 @@
             android:layout_marginBottom="8dp"
             android:gravity="center"
             android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintBottom_toTopOf="@+id/realisepar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout">
@@ -91,7 +115,6 @@
                 style="@style/TextAppearance.MainTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:text="@string/app_name"
                 android:textAlignment="center"
                 android:textColor="#CDAF0A"
@@ -104,26 +127,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:text="50 GROUPES - 458 TITRES - 815 NUMEROS"
+                android:text="@string/_50_groupes_458_titres_815_numeros"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="12sp"
                 android:textStyle="bold" />
 
             <RelativeLayout
-                android:id="@+id/facebookSignInButton"
+                android:id="@+id/contacts"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/bluebutton"
-                android:elevation="4dp">
+                android:elevation="4dp" tools:targetApi="lollipop">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
+                    android:contentDescription="@string/piccontact"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
                     app:srcCompat="@drawable/ic_contact_phone_black_24dp"
@@ -133,7 +157,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="Contactes"
+                    android:text="@string/contactes"
                     android:textAlignment="center"
                     android:textColor="@android:color/background_light"
                     android:textSize="18sp" />
@@ -147,13 +171,14 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/whitebutton"
-                android:elevation="4dp">
+                android:elevation="4dp" tools:targetApi="lollipop">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
+                    android:contentDescription="@string/mppic"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
                     app:srcCompat="@drawable/ic_road_sign"
@@ -163,7 +188,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="Meeting point"
+                    android:text="@string/meeting_point"
                     android:textColor="#000000"
                     android:textSize="18sp" />
 
@@ -171,19 +196,20 @@
 
 
             <RelativeLayout
-                android:id="@+id/emailSigninButton"
+                android:id="@+id/hammamsoussebutton"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/pinkbutton"
-                android:elevation="4dp">
+                android:elevation="4dp" tools:targetApi="lollipop">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
+                    android:contentDescription="@string/heartpic"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
                     app:srcCompat="@drawable/ic_like"
@@ -193,7 +219,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="Hammam Sousse"
+                    android:text="@string/hammam_sousse"
                     android:textColor="@android:color/background_light"
                     android:textSize="18sp" />
 
@@ -206,13 +232,14 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/darkbutton"
-                android:elevation="4dp">
+                android:elevation="4dp" tools:targetApi="lollipop">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
+                    android:contentDescription="@string/infopic"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
                     app:srcCompat="@drawable/ic_info_outline_black_24dp"
@@ -222,7 +249,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="A propos"
+                    android:text="@string/a_propos"
                     android:textColor="@android:color/background_light"
                     android:textSize="18sp" />
 

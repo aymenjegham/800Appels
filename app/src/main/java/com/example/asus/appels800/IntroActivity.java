@@ -1,5 +1,6 @@
 package com.example.asus.appels800;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.os.Message;
@@ -13,6 +14,8 @@ import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
+import android.widget.QuickContactBadge;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.Timer;
@@ -34,13 +37,44 @@ public class IntroActivity extends AppCompatActivity {
     private Timer clickTimer = null;
     private Timer faceTimer = null;
     private Boolean isFaceDown = true;
-    private String[] imageNameArray = {"mx", "vlt", "mouradi", "ad4", "crouge", "download", "ad7", "ad", "ad2", "ad3", "ad4", "ad5", "ad6", "ad7"};
+    private String[] imageNameArray = {"mx", "vlt", "mouradi", "noon", "gasahel", "mansour", "assocproteccivil", "zardi", "mani", "ad3", "ad4", "ad5", "ad6", "ad7"};
 
+    RelativeLayout contacts,hammamsousse,apropos ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
+        contacts=findViewById(R.id.contacts);
+        contacts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IntroActivity.this,MainActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        hammamsousse=findViewById(R.id.hammamsoussebutton);
+        hammamsousse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IntroActivity.this,HSPresentationActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        apropos=findViewById(R.id.gallerybutton);
+        apropos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IntroActivity.this,Apropos.class);
+                startActivity(intent);
+
+            }
+        });
 
         horizontalScrollview = (HorizontalScrollView) findViewById(R.id.horiztonal_scrollview_id);
         horizontalOuterLayout = (LinearLayout) findViewById(R.id.horiztonal_outer_layout_id);
@@ -217,4 +251,7 @@ public class IntroActivity extends AppCompatActivity {
         scaleFace.setAnimationListener(scaleFaceAnimationListener);
         return scaleFace;
     }
+
+
+
 }

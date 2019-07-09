@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.asus.appels800.Apropos">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView57"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/projet"
+                        android:textAlignment="center"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/projet_r_alis_a_but_non_lucratif_ni_publicitaires_projet_r_alis_par_jci_hammam_sousse_en_collaboration_avec_utica_h_sousse_utss_h_sousse_et_le_comit_local_du_croissant_rouge_tunisien_pour_soutenir_les_8_coles_primaires_de_la_commune_4550_l_ves_et_pour_rapprocher_les_services_des_citoyens"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/txtarab"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/r_compenses"
+                        android:textAlignment="center"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/meuilleure_publication_nationale_2005"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/meilleure_action_regionale_de_developpement_communautaire_2008"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/nomination_parmis_les_5_meilleures_actions_en_afrique_et_moyen_orient_cameroun_2018"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange" />
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/meilleure_programme_nationl_a_long_terme_pour_le_developpement_communautaire_2018"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView56"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/comit"
+                        android:textAlignment="center"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView49"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:text="@string/pr_sident_jci"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:text="@string/hammam_sousse4"
+                            android:textColor="@android:color/background_dark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView48"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/fakher_kerkeni_24_115_666"
+                            android:textColor="@android:color/background_dark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView148"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/amani_sliman_54_655_474"
+                            android:textColor="@android:color/background_dark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView38"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/pr_sident_utica"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/hammam_sousse3"
+                            android:textColor="@android:color/background_dark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView47"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/abderahim_jdidi_98_287_763"
+                            android:textColor="@android:color/background_dark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/president_utss"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/hammam_sousse5"
+                            android:textColor="@android:color/background_dark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/mohamed_laatiri_98276_834"
+                            android:textColor="@android:color/background_dark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/president_comit_croissant_rouge"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/hammam_sousse2"
+                            android:textColor="@android:color/background_dark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/wassim_jomaa_54_434_118"
+                            android:textColor="@android:color/background_dark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView58"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/directeur_du_projet"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/mourad_mani_52_446_734"
+                            android:textColor="@android:color/background_dark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView60"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/assistance_et_coordination"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@android:color/background_dark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView155"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/houda_lahouar_21_911_924"
+                            android:textColor="@android:color/background_dark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/membres_du_comit_technique"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView63"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@android:color/background_dark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView64"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/names1"
+                            android:textColor="@android:color/background_dark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView65"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/dev_app_mobile"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/aymen_jegham_96922720"
+                            android:textColor="@android:color/background_dark" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView67"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/projet_soutenu_par"
+                        android:textAlignment="center"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView68"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/municipalit_hammam_sousse2"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView70"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73361822"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView69"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/noon_design"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView71"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_21476284"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView72"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/groupe_aluminium_sahel"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView74"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73342351"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView73"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/univers_equipement_mansour"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView75"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73364200"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/textView78"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="@string/association_tunisienne_b_n_volat_au_service_de_la_protection_civile"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView79"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|start"
+                                android:text="@string/_98420686"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView80"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mozar_mobilier_zardi"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView81"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_98400764"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView82"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/vitrerie_mani"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView83"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_99620440_25098548"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView84"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/socii_t_slahv_ayed_ennakl"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView85"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73256966"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView86"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/soci_t_polymex"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView87"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73810220"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView88"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/inter_meuble"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView89"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73343390_73343291"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView90"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/soci_t_garage_sidi_salem_g_s_s"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73360302"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView92"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/labo_kantaoui_photos"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView93"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73365840"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView94"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/knooz_fm"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView95"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_31329000"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView96"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/soci_t_al_baraka"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView97"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_98520388"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView98"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/boulangerie_hssine_mhiri"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView99"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_98404319"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/textView100"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="@string/meublatex"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView101"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|start"
+                                android:text="@string/_73308777"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView102"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/voyage_et_loisirs_en_tunisie_v_l_t"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView103"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73346333"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView104"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/el_mouradi_hotels"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView105"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73246355"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView106"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ebk"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView107"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_98287763"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView108"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cntre_m_dicale_ibn_khaldoun"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView109"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73363500"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView110"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/amiraprint"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_97467656"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView112"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/boulangerie_ridha_achour"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView113"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_98276571"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView114"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/assurance_hedi_lahouar"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView115"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73224544"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView116"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/assurance_nouri_guen"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView117"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73226832"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView118"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/zitouna_takaful_hamdi_jdidi"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView119"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_29298143"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView120"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/station_service_el_kantaoui_ali_jomaa"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView121"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_98981415"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/textView122"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dar_el_maaref"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_73309235"
+                                android:textColor="@color/orange" />
+                        </LinearLayout>
+                    </TableLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView77"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/remerciement"
+                        android:textAlignment="center"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView124"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/mesdames_et_messieurs"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView125"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/nesrine_jegham_et_henda_jegham_houda_lahouar_raoudha_el_bahri_imen_ben_hessine_sonia_gallas_soulaf_kriaa_mr_neji_mhiri_nejib_bettaieb_nouri_guen_nejib_zbidi_hamdi_jedidi_hedi_lahouar_majdi_ben_amor_ramzi_labaoui_fethi_et_faouzi_mhiri_ridha_achour_slah_ayed_ali_bouaouina_kabil_fekih_salah_chemsi_nejib_el_golli_rachid_ammar_mohamed_daouas_fethi_lahouar_rached_bouaouina_jamel_bouaouina_jamel_attia_foued_et_nabil_mhiri_med_arafet_ben_abderrahmen_mohsen_mani_taoufik_houidi_malek_bel_cadi_mohamed_et_moatez_laatiri_mr_mohamed_et_adel_daouas_hamadi_mansour_walid_boufares_rochdi_moussa_et_nos_citoyens_pour_le_soutien_technique_et_financier"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview5">
+
+                <TextView
+                    android:id="@+id/textView126"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/nb_pour_mise_jour_rectification_et_ajout_veuillez_contacter_52_446_734_tannit_yahoo_fr"
+                    android:textColor="@android:color/background_light" />
+            </android.support.v7.widget.CardView>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

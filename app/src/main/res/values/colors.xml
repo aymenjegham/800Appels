@@ -3,5 +3,7 @@
     <color name="colorPrimary">#3f51b5</color>
     <color name="colorPrimaryDark">#ADB4E0</color>
     <color name="colorAccent">#ff4081</color>
-    <color name="orange">#AE731F</color>
+    <color name="orange">#701FAE</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

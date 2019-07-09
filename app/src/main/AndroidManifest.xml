@@ -2,30 +2,45 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.asus.appels800">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
+        android:largeHeap="true"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo_hammemsousse"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MedecineActivity" />
+        <activity android:name=".Apropos"
+            android:theme="@style/AppCompat.NoActionBar">
+        </activity>
+        <activity
+            android:name=".HSPresentationActivity"
+            android:theme="@style/AppCompat.NoActionBar"></activity>
+        <activity android:name=".MedecineActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".NotMainActivity"
+            android:parentActivityName=".MainActivity"
             android:launchMode="singleTop" />
         <activity
             android:name=".AddEditNoteActivity"
-            android:parentActivityName=".NotMainActivity" />
-        <activity android:name=".MainActivity">
+            android:parentActivityName=".NotMainActivity"
+            />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/AppCompat.NoActionBar"></activity>
+        <activity
+            android:name=".LaunchingActivity"
+            android:theme="@style/AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".IntroActivity"
-            android:theme="@style/AppCompat.NoActionBar" />
     </application>
 
 </manifest>

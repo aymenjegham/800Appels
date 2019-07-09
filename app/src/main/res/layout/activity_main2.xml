@@ -5,15 +5,17 @@
     android:id="@+id/constraintlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-     android:gravity="center">
+    android:gravity="center">
 
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -32,10 +34,730 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fadingEdge="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/policesecours"
+                            android:layout_width="90dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/secourspolice"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Police Secours"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/policesecours_tv_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="197"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/protectioncivilecard"
+                            android:layout_width="90dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/protectioncivile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Protection Civile"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/protectioncivile_tv_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="198 "
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/soscard"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/sos"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="S.O.S                                 GARDE NATIONALE"
+                                    android:textAlignment="center"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/sos_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="193"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/samucard"
+                            android:layout_width="90dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/samu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="SAMU"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/samu_tv_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="190"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/hopitalhachedcard"
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/hopitalhached"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Hopital Farhat Hached"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/hopitalhached_tv_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="73 221 411"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/hopitalsahloulcard"
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/hopitalsahloulsamu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Hopital Sahloul         SAMU"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/hopitalsahloulsamu_tv_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="73 369 090"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/croissantcard"
+                            android:layout_width="160dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/croissant"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Croissant Rouge Hammam Sousse"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/croissant_tv_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="97 309 309"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/municipaliteurgentcard"
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/mnicipaliteurgent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Municipalité"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/municipaliteurgente_tv_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="73 361 822"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/delegationurgentcard"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/delegationurgent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Délégation"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/delegationuregent_tv_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="73 362 544"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/stegcard"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/steg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="STEG"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/steg_tv_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="73 369 555"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/sonedecard"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/sonede"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="SONEDE"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/sonede_tv_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="73 362 561"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/onascard"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+
+                                android:id="@+id/onas"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="ONAS"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/onas_tv_horizental_scroll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="3dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text="73 361 854"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
                 <android.support.v7.widget.CardView
                     android:id="@+id/uregencecard"
-                    android:layout_width="340dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="160dp"
+                    android:layout_height="180dp"
 
                     android:layout_margin="10dp"
                     android:clickable="true"
@@ -70,7 +792,7 @@
 
                         <View
                             android:layout_width="match_parent"
-                            android:layout_height="8dp"
+                            android:layout_height="4dp"
                             android:layout_margin="5dp"
                             android:background="@android:color/holo_red_dark" />
 
@@ -87,6 +809,70 @@
                             android:scrollHorizontally="true"
                             android:singleLine="true"
                             android:text="@string/consulter_la_liste_des_contactes_des_urgences"
+                            android:textColor="@android:color/darker_gray" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ambulancecard"
+                    android:layout_width="160dp"
+                    android:layout_height="180dp"
+
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+
+                        android:id="@+id/ambulance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/ic_ambulance"
+                            android:contentDescription="@string/delegation"
+                            android:padding="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Ambulance"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/holo_red_dark" />
+
+                        <TextView
+                            android:id="@+id/ambulance_tv_horizental_scroll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:padding="3dp"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Ambulances "
                             android:textColor="@android:color/darker_gray" />
 
 
@@ -1963,7 +2749,11 @@
 
             </LinearLayout>
         </LinearLayout>
+
+
     </ScrollView>
+
+
 
 </android.support.constraint.ConstraintLayout>
 

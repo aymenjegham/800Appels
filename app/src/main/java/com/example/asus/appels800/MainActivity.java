@@ -1,11 +1,17 @@
 package com.example.asus.appels800;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,11 +20,17 @@ public class MainActivity extends AppCompatActivity {
             cardView_culture,cardView_cultureregional,cardView_justice,cardView_avocat,cardView_huissier,cardView_notaire,cardView_comptabilite,
             cardView_architect, cardView_laposte,cardView_assurance,cardView_bank,cardView_sport,cardView_voyage,cardView_adminregional,
             cardView_transport,cardView_radio,
-            cardView_hotel,cardView_park,cardView_urgence;
+            cardView_hotel,cardView_park,cardView_urgence,cardView_ambulance,cardView_policesecours,cardView_protectioncivile,cardView_sosgardenat,cardView_samu,cardView_hopitalhached
+            ,cardView_hopitalsahloul,cardView_croissantrouge,cardView_municipalite,cardView_delegationurg,cardView_steg,cardView_sonede,cardView_onas;
 
     TextView municipalitTv,delegationTv,urgenceTv,medecineTv,adminTv,policeTv,soinTv,pharmacieTv,opticTv,veterinTv,enseigneTv,enfanceTv,cultureTv,
     culture_regiTv,justiceTv,avocatTv,huissierTv,notaireTv,comptabiliteTv,architectTv,laposteTv,assuranceTv,bankTv,sportTv,voyageTv,adminregionTv,
-    transportTv,radioTv,hotelTv,parkTv;
+    transportTv,radioTv,hotelTv,parkTv,ambulance_tv;
+
+    String telnum;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
         urgenceTv=findViewById(R.id.urgence_horizental_scroll);
         urgenceTv.setSelected(true);
         urgenceTv.setText("Consulter la liste des contactes d'urgence d'hammam sousse");
+
+
+        ambulance_tv=findViewById(R.id.ambulance_tv_horizental_scroll);
+        ambulance_tv.setSelected(true);
+        ambulance_tv.setText("Consulter la liste des numeros d'ppels des ambulances ");
 
         medecineTv=findViewById(R.id.medecine_tv_horizental_scroll);
         medecineTv.setSelected(true);
@@ -145,6 +162,141 @@ public class MainActivity extends AppCompatActivity {
         parkTv.setSelected(true);
         parkTv.setText("Consulter la liste des contactes des parks et attractions d'hammam sousse");
 
+
+        cardView_onas=findViewById(R.id.onascard);
+       cardView_onas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                telnum="73361854";
+                Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+                    startActivity(intent);
+
+            }
+
+        });
+
+        cardView_sonede=findViewById(R.id.sonedecard);
+        cardView_sonede.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                telnum="73362561";
+                Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+                startActivity(intent);
+
+            }
+        });
+
+        cardView_steg=findViewById(R.id.stegcard);
+        cardView_steg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                telnum="73369555";
+                Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+                startActivity(intent);
+            }
+        });
+
+        cardView_delegationurg=findViewById(R.id.delegationurgentcard);
+        cardView_delegationurg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                telnum="73362544";
+                Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+                startActivity(intent);
+            }
+        });
+
+        cardView_municipalite=findViewById(R.id.municipaliteurgentcard);
+        cardView_municipalite.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               telnum="73361822";
+               Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+               startActivity(intent);
+           }
+       });
+
+        cardView_croissantrouge=findViewById(R.id.croissantcard);
+        cardView_croissantrouge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                telnum="97309309";
+                Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+                startActivity(intent);
+            }
+        });
+
+        cardView_hopitalsahloul=findViewById(R.id.hopitalsahloulcard);
+        cardView_hopitalsahloul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                telnum="73369090";
+                Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+                startActivity(intent);
+            }
+        });
+
+
+
+        cardView_hopitalhached=findViewById(R.id.hopitalhachedcard);
+        cardView_hopitalhached.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             telnum="73221411";
+             Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+             startActivity(intent);
+         }
+     });
+
+        cardView_samu=findViewById(R.id.samucard);
+        cardView_samu.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              telnum="190";
+              Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+              startActivity(intent);
+          }
+      });
+
+
+        cardView_sosgardenat=findViewById(R.id.soscard);
+        cardView_sosgardenat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                telnum="193";
+                Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+                startActivity(intent);
+            }
+        });
+
+
+        cardView_protectioncivile=findViewById(R.id.protectioncivilecard);
+        cardView_protectioncivile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                telnum="198";
+                Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+                startActivity(intent);
+            }
+        });
+
+        cardView_policesecours=findViewById(R.id.policesecours);
+        cardView_policesecours.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                telnum="197";
+                Intent intent =new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telnum, null));
+                startActivity(intent);
+
+            }
+        });
+
+
         cardView_municipal=findViewById(R.id.municipalitcard);
         cardView_municipal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -170,6 +322,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,MedecineActivity.class);
                 startActivity(intent);
+                Log.v("statrtedactivity1","begin");
             }
         });
 
@@ -442,11 +595,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
-                intent.putExtra("param","Station Radio FM");
+                intent.putExtra("param","Médecine_d’urgence_de_nuit_&_assistance");
 
                 startActivity(intent);
             }
         });
+
+        cardView_ambulance=findViewById(R.id.ambulancecard);
+        cardView_ambulance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(MainActivity.this,NotMainActivity.class);
+                intent.putExtra("param","Ambulance ");
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

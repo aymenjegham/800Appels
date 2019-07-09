@@ -16,70 +16,109 @@
         android:layout_height="wrap_content"
         android:padding="8dp">
 
+
         <ImageView
-            android:id="@+id/text_view_priority"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:id="@+id/phoneiv2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:background="@drawable/ic_call"
             android:contentDescription="@string/phone"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/numone"
+            app:layout_constraintTop_toTopOf="@+id/numtwo" />
 
+        <ImageView
+            android:id="@+id/phoneiv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_call"
+            android:contentDescription="@string/phone"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/numtwo"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
+
+        <ImageView
+            android:id="@+id/phoneiv1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_call"
+            android:contentDescription="@string/phone"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/numthree"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
 
         <TextView
             android:id="@+id/text_view_title"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ellipsize="end"
-            android:maxLines="1"
+            android:maxLines="2"
             android:text="@string/title"
             android:textAlignment="viewStart"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textSize="18sp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/numone"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            android:textSize="14sp"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
 
         <TextView
-            android:id="@+id/numtwo"
-            android:layout_width="0dp"
+            android:id="@+id/numone2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numone" />
+
+        <ImageView
+            android:id="@+id/phoneiv3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_call"
+            android:contentDescription="@string/phone"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/numone2"
+            app:layout_constraintTop_toBottomOf="@+id/phoneiv2" />
+
+        <TextView
+            android:id="@+id/numtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
             app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
 
         <TextView
             android:id="@+id/numthree"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            android:textSize="14sp"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
             app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
 
@@ -88,21 +127,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.84" />
+            app:layout_constraintGuide_percent="0.99" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.28" />
+            app:layout_constraintGuide_percent="0.33" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.56" />
+            app:layout_constraintGuide_percent="0.66" />
 
 
     </android.support.constraint.ConstraintLayout>
