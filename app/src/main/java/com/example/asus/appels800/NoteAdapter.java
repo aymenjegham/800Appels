@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -23,9 +24,10 @@ import com.example.asus.appels800.model.Note;
 import java.util.ArrayList;
 import java.util.List;
 
+ import static com.example.asus.appels800.model.Note.MEDECINETYPE;
 
 
-public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder>  implements Filterable {
+public class NoteAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  implements Filterable {
 
     private List<Note> notes = new ArrayList<>();
     private List<Note> notesfull ;
@@ -36,49 +38,81 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder>  i
 
 
     @Override
-    public NoteHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.note_item, parent, false);
-        return new NoteHolder(itemView);
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
+        View view;
+        if (viewType == MEDECINETYPE) {
+
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.title_item, parent, false);
+            return new TitleHolder(view);
+        }
+        else{
+
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.note_item, parent, false);
+            return new NoteHolder(view);
+        }
+
+
     }
 
+    public static class TitleHolder extends RecyclerView.ViewHolder {
+        private TextView mTitle;
+        public TitleHolder(@NonNull View itemView) {
+            super(itemView);
+            mTitle = itemView.findViewById(R.id.titleTv);
+
+        }
+    }
+
+
+
     @Override
-    public void onBindViewHolder(NoteHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
         Note currentNote = notes.get(position);
-        holder.textViewTitle.setText(currentNote.getTitle());
 
 
 
         if((!currentNote.equals(null))){
 
-            if (currentNote.getNumone() != null ) {
-                holder.numone.setVisibility(View.VISIBLE);
-                holder.imageview1.setVisibility(View.VISIBLE);
-                String str = currentNote.getNumone().replaceAll("\\s+","");
-                holder.numone.setText(str);
+            if (currentNote.getPriority()==MEDECINETYPE){
+                ((TitleHolder) holder).mTitle.setText(currentNote.getTitle());
 
-            }
-            if (currentNote.getNumtwo() != null ) {
-                holder.numtwo.setVisibility(View.VISIBLE);
-                holder.imageview2.setVisibility(View.VISIBLE);
-                String str = currentNote.getNumtwo().replaceAll("\\s+","");
-                holder.numtwo.setText(str);
 
-            }
-            if (currentNote.getNumthree() != null ) {
-                holder.numthree.setVisibility(View.VISIBLE);
-                holder.imageview3.setVisibility(View.VISIBLE);
-                String str = currentNote.getNumthree().replaceAll("\\s+","");
-                holder.numthree.setText(str);
+            }else{
+                ((NoteHolder) holder).textViewTitle.setText(currentNote.getTitle());
 
-            }
-            if (currentNote.getNumfour() != null ) {
-                holder.numfour.setVisibility(View.VISIBLE);
-                holder.imageview4.setVisibility(View.VISIBLE);
-                String str = currentNote.getNumfour().replaceAll("\\s+","");
-                holder.numfour.setText(str);
+                if (currentNote.getNumone() != null ) {
+                    ((NoteHolder) holder).numone.setVisibility(View.VISIBLE);
+                    ((NoteHolder) holder).imageview1.setVisibility(View.VISIBLE);
+                    String str = currentNote.getNumone().replaceAll("\\s+","");
+                    ((NoteHolder) holder).numone.setText(str);
 
+                }
+                if (currentNote.getNumtwo() != null ) {
+                    ((NoteHolder) holder).numtwo.setVisibility(View.VISIBLE);
+                    ((NoteHolder) holder).imageview2.setVisibility(View.VISIBLE);
+                    String str = currentNote.getNumtwo().replaceAll("\\s+","");
+                    ((NoteHolder) holder).numtwo.setText(str);
+
+                }
+                if (currentNote.getNumthree() != null ) {
+                    ((NoteHolder) holder).numthree.setVisibility(View.VISIBLE);
+                    ((NoteHolder) holder).imageview3.setVisibility(View.VISIBLE);
+                    String str = currentNote.getNumthree().replaceAll("\\s+","");
+                    ((NoteHolder) holder).numthree.setText(str);
+
+                }
+                if (currentNote.getNumfour() != null ) {
+                    ((NoteHolder) holder).numfour.setVisibility(View.VISIBLE);
+                    ((NoteHolder) holder).imageview4.setVisibility(View.VISIBLE);
+                    String str = currentNote.getNumfour().replaceAll("\\s+","");
+                    ((NoteHolder) holder).numfour.setText(str);
+
+                }
             }
+
+
 
         }
 
@@ -94,9 +128,17 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder>  i
     }
 
 
+
+
     @Override
     public int getItemViewType(int position) {
-        return super.getItemViewType(position);
+        if (notes != null) {
+            Note object = notes.get(position);
+            if (object != null) {
+                return object.getPriority();
+            }
+        }
+        return 0;
     }
 
     public void setNotes(List<Note> notes, Context cxt, Activity activity) {
@@ -108,11 +150,15 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder>  i
         notesfull=new ArrayList<>(notes);
 
 
+
+
     }
 
     public Note getNoteAt(int position) {
         return notes.get(position);
     }
+
+
 
 
     class NoteHolder extends RecyclerView.ViewHolder {
@@ -262,6 +308,8 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder>  i
 
     }
 
+
+
     public void setOnItemClickListener(OnItemClickListener listener) {
         this.listener = listener;
 
@@ -280,8 +328,16 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder>  i
         protected FilterResults performFiltering(CharSequence constraint) {
             List<Note> filteredList =new ArrayList<>();
 
+
+            for(int i=0;i<notesfull.size();i++){
+                if(notesfull.get(i).getPriority()==99){
+                    notesfull.remove(i);
+                }
+            }
+
             if (constraint == null || constraint.length() == 0){
                 filteredList.addAll(notesfull);
+
 
             }else {
                 String filterPattern =constraint.toString().toLowerCase().trim();
@@ -305,4 +361,6 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder>  i
             notifyDataSetChanged();
         }
     };
+
+
 }

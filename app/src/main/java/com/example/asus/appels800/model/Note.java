@@ -19,6 +19,9 @@ import android.arch.persistence.room.PrimaryKey;
     private String numfour;
     private String type;
 
+    public static final int MEDECINETYPE = 99;
+
+
     public Note(String title, String description, int priority,String numone,String numtwo,String numthree,String numfour,String type) {
         this.title = title;
         this.description = description;
